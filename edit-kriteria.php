@@ -2,15 +2,18 @@
 include './includes/api.php';
 akses_pengguna(array(1));
 if (!empty($_POST)) {
+    $pesan_error = array();
     $id = $_POST['id'];
     $nama = $_POST['nama'];
+    if ($nama=='') array_push($pesan_error, 'Nama kriteria tidak boleh kosong');
     $atribut = $_POST['atribut'];
-    $q = $conn->prepare("UPDATE kriteria SET nama='$nama', atribut='$atribut' WHERE id='$id'");
-    $q->execute();
-    ob_clean();
-    header('Location: ./data-kriteria');
-}
-if (!empty($_GET)) {
+    if (empty($pesan_error)) {
+        $q = $conn->prepare("UPDATE kriteria SET nama='$nama', atribut='$atribut' WHERE id='$id'");
+        $q->execute();
+        ob_clean();
+        header('Location: ./data-kriteria');
+    }
+} else if (!empty($_GET)) {
     @$id = $_GET['id'];
     $q = $conn->prepare("SELECT * FROM kriteria JOIN atribut ON kriteria.atribut=atribut.id WHERE kriteria.id='$id'");
     $q->execute();
@@ -41,5 +44,13 @@ include 'includes/header.php';
     </select>
     <button class="btn btn-primary" type="submit"><span class="fas fa-save"></span> Simpan</button>
     <button class="btn btn-danger" type="reset" onclick="location.href='./data-kriteria'"><span class="fas fa-times"></span> Batal</button>
+    <?php if (!empty($pesan_error)) {
+        echo '<hr><div class="alert alert-dismissable alert-danger"><ul>';
+        foreach ($pesan_error as $x) {
+            echo '<li>'.$x.'</li>';
+        }
+        echo '</ul></div>';
+    }
+    ?>
 </form>
 <?php include './includes/footer.php';?>
