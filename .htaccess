@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^([^.]+)$ $1.php [NC,L]
+
+	php_value upload_max_filesize 10000M
+	php_value post_max_size 10000M
+	php_value max_execution_time 30000
+	php_value max_input_time 30000
+	php_value memory_limit -1
+
+directoryslash off
+#Header set Content-Type "text/plain; charset=utf-8"
