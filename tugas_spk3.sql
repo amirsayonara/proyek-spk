@@ -261,10 +261,10 @@ CREATE TABLE `pengguna` (
 --
 
 INSERT INTO `pengguna` (`username`, `password`, `level`, `nama`) VALUES
-('admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 0, 'Rahma Nur Layla Sari'),
-('amir', '1574ad62d48a37f847699d7d2157105a5a5fd6ed323a3497fa41c7731229bf23', 1, 'Moch. Amir'),
-('pakar', 'fe65e2bda80133a7e34d263ce30d5e13030a7b3423e9404ee3307764bea94ed9', 2, 'Natiq Hasbi Alim'),
-('petugas', '60415ee3422f216c66d7e38ae80f9896bb8f967abd0316e5b43c35e1672c8f7a', 1, 'Rachmad Agung Pambudi');
+('admin', SHA2('admin', 0), 0, 'Rahma Nur Layla Sari'),
+('amir', SHA2('amir', 0), 1, 'Moch. Amir'),
+('pakar', SHA2('pakar', 0), 2, 'Natiq Hasbi Alim'),
+('petugas', SHA2('petugas', 0), 1, 'Rachmad Agung Pambudi');
 
 --
 -- Indexes for dumped tables
