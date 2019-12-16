@@ -24,7 +24,7 @@ if (!empty($_GET)) {
 
 include 'includes/header.php';
 ?>
-<h5>Edit Kriteria</h5><hr>
+<h5><span class="fas fa-pen"></span> Edit Kriteria</h5><hr>
 <form method="post" class="mx-auto" style="max-width:400px" autocomplete="off">
     <input type="hidden" name="id" value="<?=$id?>">
     <label class="mr-sm-2" for="nama">Nama Kriteria</label>
@@ -39,7 +39,7 @@ include 'includes/header.php';
     }
     ?>
     </select>
-    <input  class="btn btn-primary" type="submit" value="Simpan">
-    <input class="btn btn-danger" type="reset" onclick="location.href='data-kriteria'" value="Batal">
+    <button class="btn btn-primary" type="submit"><span class="fas fa-save"></span> Simpan</button>
+    <button class="btn btn-danger" type="reset" onclick="location.href='./data-kriteria'"><span class="fas fa-times"></span> Batal</button>
 </form>
 <?php include './includes/footer.php';?>

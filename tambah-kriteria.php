@@ -11,7 +11,7 @@ if (!empty($_POST)) {
 }
 include './includes/header.php';
 ?>
-<h5>Tambah Kriteria</h1><hr>
+<h5><span class="fas fa-plus-circle"></span> Tambah Kriteria</h1><hr>
 <form method="post" class="mx-auto" style="max-width:400px" autocomplete="off">
     <label class="mr-sm-2" for="nama">Nama Kriteria</label>
     <input id="nama" name="nama" class="form-control mb-2 mr-sm-2" type="text">
@@ -23,7 +23,7 @@ include './includes/header.php';
     }
     ?>
     </select>
-    <input  class="btn btn-primary" type="submit" value="Tambah">
-    <input class="btn btn-danger" type="reset" onclick="location.href='data-kriteria'" value="Batal">
+    <button class="btn btn-primary" type="submit"><span class="fas fa-plus-circle"></span> Tambah</button>
+    <button class="btn btn-danger" type="reset" onclick="location.href='./data-kriteria'"><span class="fas fa-times"></span> Batal</button>
 </form>
 <?php include './includes/footer.php';?>

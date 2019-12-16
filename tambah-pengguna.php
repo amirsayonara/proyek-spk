@@ -28,7 +28,7 @@ if (!empty($_POST)) {
 }
 include './includes/header.php';
 ?>
-<h5>Tambah Pengguna</h1><hr>
+<h5><span class="fas fa-plus-circle"></span> Tambah Pengguna</h1><hr>
 <form method="post" class="mx-auto" style="max-width:400px" autocomplete="off">
     <label class="mr-sm-2" for="username">Username</label>
     <input id="username" value="<?=@$username?>" name="username" class="form-control mb-2 mr-sm-2" type="text">
@@ -46,8 +46,8 @@ include './includes/header.php';
     </select>
     <label class="mr-sm-2" for="nama">Nama Tampilan</label>
     <input id="nama" value="<?=@$nama?>" name="nama" class="form-control mb-2 mr-sm-2" type="text">
-    <input  class="btn btn-primary" type="submit" value="Tambah">
-    <input class="btn btn-danger" type="reset" onclick="location.href='manajemen-pengguna'" value="Batal">
+    <button class="btn btn-primary" type="submit"><span class="fas fa-plus-circle"></span> Tambah</button>
+    <button class="btn btn-danger" type="reset" onclick="location.href='./manajemen-pengguna'"><span class="fas fa-times"></span> Batal</button>
     <?php if (!empty($pesan_error)) {
         echo '<hr><div class="alert alert-dismissable alert-danger"><ul>';
         foreach ($pesan_error as $x) {

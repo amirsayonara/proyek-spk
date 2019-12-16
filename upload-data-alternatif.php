@@ -47,7 +47,7 @@ if (!empty($_FILES)) {
     }
     header('Location: ./data-alternatif');
 } else { include './includes/header.php'; ?>
-<h5>Upload Data Alternatif</h5><hr>
+<h5><span class="fas fa-upload"></span> Upload Data Alternatif</h5><hr>
 <form enctype="multipart/form-data" method="post" id="form-upload-data-siswa">
     <div class="custom-file mb-2 mr-sm-2">
         <input class="custom-file-input" name="file" id="file" required type="file" accept=".xls,.xlsx">
@@ -75,6 +75,6 @@ if (!empty($_FILES)) {
         </div>
     </div>
     <?php $k++; } ?>
-    <button class="btn btn-primary" id="upload" type="submit">Upload</button>
+    <button class="btn btn-primary" id="upload" type="submit"><span class="fas fa-upload"></span> Upload</button>
 </form>
 <?php } include './includes/footer.php';?>

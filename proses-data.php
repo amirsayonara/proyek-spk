@@ -1,7 +1,7 @@
 <?php include './includes/api.php';
 include './includes/header.php';
 //akses_pengguna(array(1));?>
-<h5>Proses Data</h5><hr>
+<h5><span class="fas fa-radiation"></span> Proses Data</h5><hr>
 <h6>Data</h6>
 <table class="table table-bordered table-sm table-striped small">
     <tr class="text-center">

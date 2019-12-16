@@ -1,5 +1,5 @@
 <?php include './includes/api.php'; include './includes/header.php';?>
-<h5>Halaman Awal</h5><hr>
+<h5><span class="fas fa-home"></span> Halaman Awal</h5><hr>
 <p>Sistem ini dibuat sebagai proyek akhir mata kuliah Sistem Pendukung Keputusan menggunakan metode hybrid AHP-SAW.</p>
 <p>Hak akses pengguna:</p>
 <ol>

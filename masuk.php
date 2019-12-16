@@ -24,7 +24,7 @@ include './includes/header.php';
 ?>
 <div class="card mb-4 shadow-sm" style="margin:30px auto;max-width:400px;">
     <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Masuk</h4>
+        <h4 class="my-0 font-weight-normal"><span class="fas fa-sign-in-alt"></span> Masuk</h4>
     </div>
     <div class="card-body">
         <form method="post" id="form-masuk">
@@ -33,7 +33,7 @@ include './includes/header.php';
             <label class="mr-sm-2" for="password">Password</label>
             <input id="password" value="<?=@$password?>" name="password" class="form-control mb-2 mr-sm-2" type="password">
             <span class="text-danger" id="pesan-error"></span>
-            <button type="submit" class="btn btn-outline-primary float-right">Masuk</button>
+            <button type="submit" class="btn btn-outline-primary float-right"><span class="fas fa-sign-in-alt"></span> Masuk</button>
         </form>
     </div>
     <?=@$pesan_error;?>

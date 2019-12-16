@@ -1,5 +1,4 @@
 <?php include './includes/api.php';require_once './includes/Matrix.php';akses_pengguna(array(2));?>
-<h5>Perbandingan Kriteria</h5><hr>
 <?php
 if (!empty($_POST)) {
     foreach (array_keys($_POST) as $x) {
@@ -13,6 +12,7 @@ if (!empty($_POST)) {
 }
 $kriteria = data_kriteria();
 include './includes/header.php';
+echo '<h5><span class="fas fa-sliders-h"></span> Perbandingan Kriteria</h5><hr>';
 echo '<form id="form-perbandingan-matrix" method="post" class="mx-auto" autocomplete="off"><div class="custom-control custom-radio">';
 for ($x=0; $x < count($kriteria); $x++) {
     for ($y=$x+1; $y < count($kriteria); $y++) {
@@ -49,7 +49,7 @@ for ($x=0; $x < count($kriteria); $x++) {
         //echo "<input value=\"$b\" name=\"{$kriteria[$x][0]}-{$kriteria[$y][0]}\" id=\"{$kriteria[$x][0]}-{$kriteria[$y][0]}\" class=\"form-control\">";
     }
 }
-echo '<br><div id="pesan-error"></div><input class="btn btn-primary" type="submit" value="Simpan dan Periksa"></div></form>';
+echo '<br><div id="pesan-error"></div><button class="btn btn-primary" type="submit"><span class="fas fa-save"></span> Simpan dan Periksa</button></div></form>';
 if (!empty($_POST)) {
 
     echo '<hr><h6>Matriks Perbandingan Berpasangan</h6><table class="table table-bordered table-sm small"><tr><td></td>';
