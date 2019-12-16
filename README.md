@@ -1,4 +1,4 @@
-# Proyek Akhir Mata Kuliah Sistem Pendukung Keputusan
+# Proyek Akhir Sistem Pendukung Keputusan
 > Sistem pendukung keputusan pemilihan wisata terbaik di kabupaten Bangkalan menggunakan metode hybrid AHP-SAW
 
 > Ucapan terima kasih kepada Ibu [Eka Mala Sari Rochman](https://forlap.ristekdikti.go.id/dosen/detail/NTdDNjJDQkItQkY3My00QTAxLTkzOTEtODQzRUEzMjVGNDc3) selaku Dosen Pembimbing kami
