@@ -1,4 +1,4 @@
-<?php include './includes/api.php'; require_once "PHPExcel-1.8/Classes/PHPExcel.php";akses_pengguna(array(1));
+<?php include './includes/api.php'; require_once "./PHPExcel-1.8/Classes/PHPExcel.php";akses_pengguna(array(1));
 
 if (!empty($_FILES)) {
     $eks = explode('.', $_FILES['file']['name']);
