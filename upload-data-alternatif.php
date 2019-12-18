@@ -3,7 +3,7 @@
 if (!empty($_FILES)) {
     $eks = explode('.', $_FILES['file']['name']);
     $eks = $eks[count($eks)-1];
-    $file = '_upload/'.random_int(0, 999999999).'.'.$eks;
+    $file = './_upload/'.random_int(0, 999999999).'.'.$eks;
     move_uploaded_file($_FILES['file']['tmp_name'], $file);
 
     //baca excel
