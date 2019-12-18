@@ -19,3 +19,20 @@ Jurusan     : Teknik Informatika
 Universitas : Universitas Trunojoyo Madura
 ```
 [Copyright (c) 2019 Amir Sayonara](LICENSE)
+
+## Screenshoot
+Pratinjau yang berada dalam folder [Screenshot](Screenshot)
+### Halaman utama
+![alt text](Screenshot/ss1.png 'Halaman utama')
+### Halaman data kriteria
+![alt text](Screenshot/ss2.png 'Halaman data kriteria')
+### Halaman perbandingan kriteria
+![alt text](Screenshot/ss3.png 'Halaman perbandingan kriteria')
+### Halaman upload data alternatif
+![alt text](Screenshot/ss4.png 'Halaman upload data alternatif')
+### Halaman data alternatif
+![alt text](Screenshot/ss5.png 'Halaman data alternatif')
+### Halaman proses data
+![alt text](Screenshot/ss6.png 'Halaman proses data')
+### Halaman manajemen pengguna
+![alt text](Screenshot/ss7.png 'Halaman manajemen pengguna')
